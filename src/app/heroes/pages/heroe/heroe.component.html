@@ -12,7 +12,7 @@
     <div fxLayout="row" fxFlex.xs="column" fxLayoutGap="30px">
         <mat-card  fxFlex="50">
             <div>
-                <h1>{{heroe.superhero}} <small>--{{heroe.alter_ego}}</small></h1>
+                <mat-card-title>{{heroe.superhero}}:  <small>--{{heroe.alter_ego}}</small></mat-card-title>
                 <mat-divider></mat-divider>
                 <hr>
                 <img [src]="heroe | imagen">
@@ -27,9 +27,13 @@
                     <mat-list-item>{{heroe.characters}}</mat-list-item>
                     <mat-list-item>{{heroe.publisher}}</mat-list-item>
                     <mat-list-item>{{heroe.alter_ego}}</mat-list-item>
-                </mat-list>
+                    <mat-list-item>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Molestiae veniam optio magni recusandae illum dicta cum quam consectetur magnam 
+                        ut sequi fugit, numquam harum id in neque temporibus similique distinctio!</mat-list-item>
+                    </mat-list>
                 <br>
-                <button mat-button color="warn" (click)="regresar()">
+                <button mat-button color="warn" (click)="regresar()" mat-icon-button >
+                    <mat-icon>undo</mat-icon>
                     Regresar
                 </button>
             </div>

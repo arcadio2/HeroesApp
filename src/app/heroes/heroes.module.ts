@@ -15,6 +15,7 @@ import { ListadoComponent } from './pages/listado/listado.component';
 import { HeoresRoutingModule } from './heores-routing.module';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 import { ImagenPipePipe } from './pipes/imagen-pipe.pipe';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -32,6 +33,7 @@ import { ImagenPipePipe } from './pipes/imagen-pipe.pipe';
   imports: [
     CommonModule,
     FlexLayoutModule,
+    FormsModule, 
     HeoresRoutingModule,
     MaterialModule
   ]
